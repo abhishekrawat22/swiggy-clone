@@ -1,7 +1,8 @@
 const Footer = () => {
+  const date = new Date();
   return (
-    <footer className="text-center mt-auto border-t border-teal-100 p-2">
-      <p className="text-sm">Copyright &copy; All Rights Reserved</p>
+    <footer className="p-2 mt-auto text-center border-t border-teal-100">
+      <p className="text-sm">{date.getFullYear()} Copyright &copy; All Rights Reserved</p>
     </footer>
   );
 };

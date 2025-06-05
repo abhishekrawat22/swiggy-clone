@@ -1,12 +1,11 @@
+import RestaurantCard from "../../components/RestaurantCard";
 import Layout from "../../layouts/layout";
-
-const api_url =
-  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.65420&lng=77.23730&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+import { api_url } from "../../utils/constant";
 
 const Home = () => {
   return (
     <Layout>
-      <h1>Hello Swiggy</h1>
+      <RestaurantCard apiUrl={api_url} />
     </Layout>
   );
 };

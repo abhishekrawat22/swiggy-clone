@@ -1,7 +1,7 @@
 {
-  "name": "swiggy-clone",
+  "name": "online-food-ordering-app",
   "version": "1.0.0",
-  "description": "A web application to order food using React",
+  "description": "A web application to order food from your comfort",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
@@ -10,7 +10,10 @@
     "test": "jest"
   },
   "keywords": [
-    "Food"
+    "Food",
+    "Online",
+    "Order",
+    "Order Food"
   ],
   "devDependencies": {
     "autoprefixer": "^10.4.19",
