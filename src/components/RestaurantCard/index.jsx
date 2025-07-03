@@ -7,7 +7,7 @@ const RestaurantCard = ({apiUrl}) => {
   const handleFetchData = async (apiUrl) => {
     const response = await fetch(apiUrl);
     const res = await response.json();
-    setResList(res?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);
+    setResList(res?.data?.cards[0]?.card?.card?.imageGridCards?.info);
   }
   useEffect(() => {
       handleFetchData(apiUrl);
@@ -17,7 +17,7 @@ const RestaurantCard = ({apiUrl}) => {
     <>
       <h1>What's on your mind?</h1>
       <div className="flex flex-wrap gap-6 px-4">
-        {resList.length === 0 && <span>Loading...</span>}
+        {resList?.length === 0 && <span>Loading...</span>}
         {resList && resList?.map((restaurant) => {
           return (
             <a key={restaurant?.id} href={restaurant?.action?.link} className="restaurant-card">

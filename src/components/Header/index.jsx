@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="header-wrapper flex items-center justify-between sticky top-0 shadow-md px-10 py-4 bg-white">
+    <header className="sticky top-0 flex items-center justify-between px-10 py-4 bg-white shadow-[0_15px_40px_-20px_rgba(40,44,63,0.15)] header-wrapper">
       <div className="flex gap-x-3">
         <Link to="/">
           <svg
@@ -35,7 +35,7 @@ const Header = () => {
         </Link>
       </div>
       <nav>
-        <ul className="nav-items flex gap-x-10 list-none p-0">
+        <ul className="flex p-0 text-lg list-none font- nav-items gap-x-10">
           <li>Search</li>
           <li>Offers</li>
           <li>Help</li>
