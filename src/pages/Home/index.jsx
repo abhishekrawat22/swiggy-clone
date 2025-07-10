@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <Layout>
       <RestaurantCard apiUrl={api_url} />
+      <hr className="my-9" />
     </Layout>
   );
 };
